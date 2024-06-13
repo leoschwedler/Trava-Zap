@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.gms.google-services")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -51,6 +52,8 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore-ktx")
     //Storage
     implementation("com.google.firebase:firebase-storage-ktx")
+    //Picasso
+    implementation ("com.squareup.picasso:picasso:2.8")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

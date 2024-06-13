@@ -1,4 +1,4 @@
-package com.example.whatsapp
+package com.example.whatsapp.ui
 
 import android.content.Intent
 import android.os.Bundle

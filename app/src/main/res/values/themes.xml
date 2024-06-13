@@ -12,9 +12,7 @@
     </style>
 
     <style name="Circle">
-        <item name="cornerSize">
-            50dp
-        </item>
+        <item name="cornerSize">50%</item>
     </style>
     <style name="Theme.WhatsApp" parent="Base.Theme.WhatsApp" />
 </resources>

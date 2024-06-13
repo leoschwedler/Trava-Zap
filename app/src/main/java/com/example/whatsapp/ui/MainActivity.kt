@@ -1,19 +1,16 @@
-package com.example.whatsapp
+package com.example.whatsapp.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.MenuProvider
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.whatsapp.R
 import com.example.whatsapp.adapters.ViewPagerAdapter
 import com.example.whatsapp.databinding.ActivityMainBinding
-import com.example.whatsapp.databinding.ActivityPerfilBinding
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.auth.FirebaseAuth
 
