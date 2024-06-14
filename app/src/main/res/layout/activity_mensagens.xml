@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bananaa"
+    android:background="@drawable/newfundo"
     tools:context=".ui.MensagensActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -45,6 +45,7 @@
         app:layout_constraintTop_toTopOf="@+id/imgFotoPerfil" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMensagens"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -52,10 +53,11 @@
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbMensagens" />
+        app:layout_constraintTop_toBottomOf="@+id/tbMensagens"
+        tools:listitem="@layout/item_mensagem_remetente" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/fabEnviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -76,10 +78,11 @@
         android:layout_marginBottom="8dp"
         app:boxBackgroundColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton"
+        app:layout_constraintEnd_toStartOf="@+id/fabEnviar"
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editMensagem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite sua mensagem" />
